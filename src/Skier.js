@@ -1,6 +1,7 @@
 class Skier {
-  constructor(name) {
+  constructor(name, ticket_status) {
     this.name = name;
+    this.hasLiftTicket = ticket_status
   }
 }
 
