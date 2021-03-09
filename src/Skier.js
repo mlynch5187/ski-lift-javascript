@@ -3,6 +3,7 @@ class Skier {
     this.name = name;
     this.hasLiftTicket = ticket_status
     this.skillLevel = 1
+    this.nextSlope = 'green circle';
   }
 }
 
