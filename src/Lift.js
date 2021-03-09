@@ -9,11 +9,13 @@ class Lift  {
   }
 
   admitSkier(name, ticket_status)  {
-    if (this.skiers.length < 2)  {
+    if (this.skiers.length < 2 && ticket_status === true)  {
       var skier = new Skier(name, ticket_status)
       this.skiers.push(skier)
-    } else {
+    } else if (this.skiers.length >= 2) {
       return `Sorry, ${name}. Please wait for the next lift!`
+    } else if (ticket_status === false) {
+      return `Sorry, ${name}. You need a lift ticket!`
     }
   }
 }
