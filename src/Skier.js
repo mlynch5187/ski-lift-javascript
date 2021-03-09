@@ -5,6 +5,10 @@ class Skier {
     this.skillLevel = 1
     this.nextSlope = 'green circle';
   }
+
+  takeLesson()  {
+    this.skillLevel++
+  }
 }
 
 module.exports = Skier;
