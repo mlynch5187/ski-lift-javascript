@@ -1,9 +1,13 @@
 var Skier = require('./Skier');
 
 class Lift  {
-  constructor() {
+  constructor(limit) {
     this.inService = true;
-    this.limit = 3;
+    if (limit === undefined)  {
+      this.limit = 3;
+    } else {
+      this.limit = limit
+    }
     this.skiers = [];
     this.safetyBar = 'up';
   }
