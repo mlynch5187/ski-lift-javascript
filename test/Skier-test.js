@@ -41,7 +41,7 @@ describe("Skier", function () {
     assert.equal(skier.skillLevel, 3);
   });
 
-  it.skip('should choose an intermediate level slope after 2 lessons', function () {
+  it('should choose an intermediate level slope after 2 lessons', function () {
     var skier = new Skier('Hannah', true);
 
     skier.takeLesson();
