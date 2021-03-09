@@ -14,6 +14,9 @@ class Skier {
     if (this.skillLevel === 3)  {
       this.nextSlope = 'blue square'
     }
+    else if (this.skillLevel >= 5) {
+      this.nextSlope = 'black diamond'
+    }
   }
 }
 

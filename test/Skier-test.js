@@ -53,7 +53,7 @@ describe("Skier", function () {
     assert.equal(skier.nextSlope, 'blue square');
   });
 
-  it.skip('should choose an expert level slope after 4 lessons', function () {
+  it('should choose an expert level slope after 4 lessons', function () {
     var skier = new Skier('Hannah', true);
 
     skier.takeLesson();
