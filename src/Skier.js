@@ -1,6 +1,6 @@
 class Skier {
-  constructor() {
-
+  constructor(name) {
+    this.name = name;
   }
 }
 
