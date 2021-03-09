@@ -24,7 +24,16 @@ class Lift  {
   }
 
   startLift() {
-    this.safetyBar = 'down';
+    if (this.skiers.length === this.limit) {
+      this.safetyBar = 'down';
+    } else if (this.limit - this.skiers.length === 1) {
+      this.safetyBar = 'up';
+      return `We still need 1 more skier!`
+    } else {
+      var num = (this.limit - this.skiers.length);
+      this.safetyBar = 'up';
+      return `We still need ${num} more skiers!`;
+    }
   }
 }
 
