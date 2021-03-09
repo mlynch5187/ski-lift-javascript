@@ -1,6 +1,6 @@
 class Lift  {
   constructor() {
-
+    this.inService = true;
   }
 }
 
